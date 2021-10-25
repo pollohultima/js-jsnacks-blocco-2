@@ -25,15 +25,16 @@ const bikes = [
 
 console.log(bikes);
 
+//bici di riferimento
 let light = bikes[0];
 
 for (let i = 0; i < bikes.length; i++) {
     const bike = bikes[i];
-
+    //confronta le bici
     if (bike.weight < light.weight) {
         light = bike
     }
 
 }
-
+document.querySelector('.lightest').innerHTML = `La bici più leggera è: ${light.brand} e pesa ${light.weight}`
 console.log(light);
