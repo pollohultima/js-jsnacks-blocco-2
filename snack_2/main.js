@@ -27,3 +27,13 @@ const teams = [
         faults: 0
     }
 ]
+
+for (let i = 0; i < teams.length; i++) {
+    const team = teams[i];
+
+    team.points = Math.floor(Math.random() * 100) + 1
+    team.faults = Math.floor(Math.random() * 20) + 1
+
+}
+
+console.log(teams);
